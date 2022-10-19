@@ -1,4 +1,5 @@
 import {
+  AttachMoney,
   ChatBubbleOutline,
   DynamicFeed,
   LineStyle,
@@ -43,6 +44,14 @@ export default function Sidebar() {
             <li className="sidebarListItem">
               <Storefront className="sidebarIcon" />
               Products
+            </li>
+            <li className="sidebarListItem">
+              <AttachMoney className="sidebarIcon" />
+              Transaction
+            </li>
+            <li className="sidebarListItem">
+              <Report className="sidebarIcon" />
+              Reports
             </li>
           </ul>
         </div>
