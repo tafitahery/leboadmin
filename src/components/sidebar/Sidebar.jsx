@@ -11,6 +11,7 @@ import {
   TrendingUp,
   WorkOutline,
 } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 import './sidebar.css';
 
 export default function Sidebar() {
@@ -38,12 +39,16 @@ export default function Sidebar() {
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem">
-              <PermIdentity className="sidebarIcon" />
-              Users
+              <Link to="users" className="link">
+                <PermIdentity className="sidebarIcon" />
+                Users
+              </Link>
             </li>
             <li className="sidebarListItem">
-              <Storefront className="sidebarIcon" />
-              Products
+              <Link to="products" className="link">
+                <Storefront className="sidebarIcon" />
+                Products
+              </Link>
             </li>
             <li className="sidebarListItem">
               <AttachMoney className="sidebarIcon" />
