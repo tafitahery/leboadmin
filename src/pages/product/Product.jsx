@@ -1,3 +1,4 @@
+import { Publish } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import Chart from '../../components/chart/Chart';
 import { productData } from '../../dummyData';
@@ -65,7 +66,20 @@ export default function Product() {
               <option value="no">No</option>
             </select>
           </div>
-          <div className="productFormRight"></div>
+          <div className="productFormRight">
+            <div className="productUpload">
+              <img
+                src="https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt=""
+                className="productUploadImg"
+              />
+              <label htmlFor="file">
+                <Publish />
+              </label>
+              <input type="file" id="file" style={{ display: 'none' }} />
+            </div>
+            <button className="productButton">Update</button>
+          </div>
         </form>
       </div>
     </div>
